@@ -46,7 +46,6 @@ class apache {
        # Comments
        include apache::install
        
-
        include apache::service
 
 }
