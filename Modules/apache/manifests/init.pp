@@ -46,7 +46,7 @@ class apache {
 
     $pack_name = $facts['os']['family'] ? {
         'Redhat' => 'httpd' , 
-        'Ubuntu' => 'apache2' ,
+        'Debian' => 'apache2' ,
 
 
     }
@@ -56,7 +56,7 @@ class apache {
        
    }
    # Comments
-   
+
 
 
 }
