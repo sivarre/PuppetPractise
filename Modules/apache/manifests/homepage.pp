@@ -3,7 +3,7 @@
 #
 class apache::homepage {
     # resources
-    file { '/var/www/index':
+    file { '/var/www/html/index.html':
         ensure => file,
         owner  => owner,
         group  => group,
