@@ -44,9 +44,11 @@
 #
 class apache {
 
-    $pack_name = $facts['os'['family'] ? {
+    $pack_name = $facts['os']['family'] ? {
         'Redhat' => 'httpd' , 
         'Ubuntu' => 'apache2' ,
+
+        
     }
 
     $package { $pack_name:
