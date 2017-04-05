@@ -55,6 +55,8 @@ class apache {
        ensure => purged,
        
    }
+   # Comments
+   
 
 
 }
