@@ -43,20 +43,9 @@
 # Copyright 2017 Your name here, unless otherwise noted.
 #
 class apache {
+       # Comments
+       include apache::install
 
-    $pack_name = $facts['os']['family'] ? {
-        'Redhat' => 'httpd' , 
-        'Debian' => 'apache2' ,
-
-
-    }
-
-   package { $pack_name:
-       ensure => purged,
+       include apache::service
        
-   }
-   # Comments
-
-
-
 }
