@@ -6,7 +6,7 @@ class apache::service {
         'Debian' => 'apache2' ,
     }
 
-    service { '$pack_name':
+    service { $pack_name:
         ensure     => running,
         enable     => true,
         hasrestart => true,
