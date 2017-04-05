@@ -48,13 +48,13 @@ class apache {
         'Redhat' => 'httpd' , 
         'Ubuntu' => 'apache2' ,
 
-        
+
     }
 
-    $package { $pack_name:
-        ensure => purged,
-        
-    }
+   package { $pack_name:
+       ensure => purged,
+       
+   }
 
 
 }
