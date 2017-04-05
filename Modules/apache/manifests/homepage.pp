@@ -22,7 +22,7 @@ class apache::homepage {
         enable     => true,
         hasrestart => true,
         hasstatus  => true,
-        restart => ,
+        restart => "",
         # pattern    => 'test',
     }
 }
