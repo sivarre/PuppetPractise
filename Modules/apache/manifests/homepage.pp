@@ -3,13 +3,13 @@
 #
 class apache::homepage {
     # resources
-    file { '/var/www/html/':
+    file { '/var/www/html/index.html':
         ensure => file,
         owner  => owner,
         group  => group,
         mode   => mode,
-        source => 'puppet:///modules/apache/files/index.html';
-        #content => file('apache/file/index.html'),
+       # source => 'puppet:///modules/apache/files/index.html';
+        content => file('apache/index.html'),
     }
 
  $pack_name = $facts['os']['family'] ? {
